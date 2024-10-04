@@ -8,12 +8,6 @@
 
     <link rel="stylesheet" href="./style.css" />
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
       src="https://kit.fontawesome.com/a6c073ed30.js"
       crossorigin="anonymous"
     ></script>
@@ -21,29 +15,51 @@
     <title>MRE-Records</title>
   </head>
   <body>
-    <header class="shadow mb-2 bg-cyan-100">
-      <div class="max-w-screen-lg mx-auto py-4">
-        <a class="text-2xl flex items-center font-black">
-          <span class="mr-2 text-blue-500"
-            ><i class="fa-solid fa-record-vinyl"></i
-          ></span>
-          <span class="">MRE Records</span>
-        </a>
+  <header class="shadow mb-2 bg-cyan-100 py-4">
+  <div
+    class="relative mx-auto flex flex-col sm:flex-row max-w-screen-lg sm:items-center sm:justify-between"
+  >
+    <a class="flex items-center text-2xl font-black sm:px-4">
+      <span class="mr-2 text-red-900"
+        ><i class="fa-solid fa-record-vinyl"></i
+      ></span>
+      <div class="border-b-4 border-red-900">
+        <span>MRE Records</span>
       </div>
-      <nav class="">
-        <ul class="">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Albums</a></li>
-          <li><a href="#">Artiste</a></li>
-          <li><a href="#">Lifestyle</a></li>
-          <li><a href="#">Inquire</a></li>
-        </ul>
-      </nav>
-    </header>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    </a>
+    <input class="peer hidden " type="checkbox" id="navbar-open" />
+    <label
+      class="sm:hidden cursor-pointer absolute right-0 text-xl mt-1 px-4"
+      for="navbar-open"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </label>
+
+    <nav class="peer-checked:block hidden py-4 sm:block sm:py-2 sm:px-5">
+      <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+        <li>
+          <a href="#" class="hover:text-red-600 nav-Items">About</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-red-600">Albums</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-red-600 nav-Items">Artiste</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-red-600 nav-Items">Lifestyle</a>
+        </li>
+        <li class="mt-2 sm:mt-0">
+          <a
+            href="#"
+            class="border-2 px-5 py-2 rounded-xl border-red-500 font-medium text-red-500 hover:bg-red-100 hover:text-white"
+            >Inquire</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
   </body>
 </html>
