@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media (max-width: 640px) {
+  .mobile-pr-4 {
+    padding-left: 45px; /* 16px = pr-4 in Tailwind */
+  }
+  .MRE-span{
+    padding-left: 20px; /* 16px = pr-4 in Tailwind */
+
+  }
+}
