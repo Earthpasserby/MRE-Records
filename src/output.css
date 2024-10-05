@@ -665,6 +665,10 @@ video {
   justify-content: center;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
 .gap-11 {
   gap: 2.75rem;
 }
@@ -675,6 +679,10 @@ video {
 
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .rounded-sm {
