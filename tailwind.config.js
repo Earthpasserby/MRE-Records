@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['"Protest Strike", "sans-serif"'],
+        sans: ["Roboto", "sans-serif"], // You can replace 'sans' with any name you'd like to call it
+        serif: ["Georgia", "serif"], // Add more font types if necessary
       },
     },
   },
